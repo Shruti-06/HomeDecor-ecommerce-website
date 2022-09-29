@@ -1,0 +1,18 @@
+<br>
+
+  <div class="row text-center">
+    <div class="col-lg-3" *ngFor="let i of products">
+
+      <a routerLink="/productdetail/{{i._id}} ">
+        
+        <img src="http://localhost:3000/{{i.productImagePath}} " height="200px" width="260px" alt=""><br>
+
+        <b style="color: #4e9525;">{{i.name}} </b> 
+        <br>
+        <p style="color: slategrey;">price: Rs.{{i.price}}</p>
+        <br>
+
+      </a>
+       
+    </div>
+</div>

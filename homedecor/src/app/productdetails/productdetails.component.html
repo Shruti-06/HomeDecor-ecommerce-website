@@ -1,0 +1,40 @@
+<h1>Product details</h1>
+
+<div class="row" >
+       
+    <div class="col-lg-4 text-right">
+            <img width="360x" height="300px" src="http://localhost:3000/{{products.productImagePath}}" alt="">
+        </div>
+
+
+    <div class="col-lg-8  ">
+       <h2>
+          {{ products.name }}
+       </h2>
+       <h5>
+           <b>Description :</b>  {{products.description}}
+       </h5>
+       <h6>inclusive of all taxes</h6>
+       <hr>
+       <span>
+         <h5>Price :  Rs.{{products.price}}</h5>
+       </span>
+       <hr>
+       Select Qty:
+       
+       <span>
+           <select name="" id="" #ingre_qty>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+           </select>
+       </span>
+       <hr>
+           
+       <button (click)="addTocart()" class="btn btn-secondary">
+        ADD TO CART
+    </button>
+    </div>
+</div>
